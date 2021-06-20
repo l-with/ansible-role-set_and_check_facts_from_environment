@@ -1,6 +1,6 @@
 # Ansible Role set and check facts from environment
 
-set and check facts from environment variables
+sets and checks facts from environment variables
 
 ## Role Variables
 
