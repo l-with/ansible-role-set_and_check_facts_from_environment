@@ -1,0 +1,14 @@
+---
+
+- hosts: localhost
+  roles:
+    - role: ../..//ansible-role-set_and_check_facts_from_environment
+      vars:
+        set_and_check_facts_from_environment_required_vars:
+          - user
+  tasks:
+    - name: Print user
+      ansible.builtin.debug:
+        msg: "user: '{{ user }}'"
+
+...
