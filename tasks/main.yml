@@ -8,6 +8,8 @@
   ansible.builtin.fail:
     msg: Environment variable '{{ item }}' is not set
   when: not lookup('vars', item)
-  with_items: "{{ set_and_check_facts_from_environment_required_vars }}"
+  with_items: "{{ set_and_check_facts_from_environment_required_vars 
+    | difference(set_and_check_facts_from_environment_non_required_vars)
+  }}"
 
 ...

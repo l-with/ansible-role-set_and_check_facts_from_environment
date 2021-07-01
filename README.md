@@ -9,4 +9,8 @@ sets and checks facts from environment variables on control node
 the list of variables to get from environment
 
 The variables are looked up from the environment variables with the same name as in the list, but in upper cases.
-If the environment variable is not set, ansible.builtin.failed is used to fail.
+If the environment variable is not set and not in `set_and_check_facts_from_environment_non_required_vars`, ansible.builtin.failed is used to fail.
+
+### `set_and_check_facts_from_environment_non_required_vars`: `[]`
+
+the list of variable not to check if set
