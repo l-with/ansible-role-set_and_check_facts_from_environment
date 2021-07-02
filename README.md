@@ -4,7 +4,7 @@ sets and checks facts from environment variables on control node
 
 ## Role Variables
 
-### `set_and_check_facts_from_environment_required_vars`
+### `set_and_check_facts_from_environment_required_vars`: `[]`
 
 the list of variables to get from environment
 

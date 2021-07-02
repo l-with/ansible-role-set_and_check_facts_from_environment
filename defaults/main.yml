@@ -1,5 +1,6 @@
 ---
 
+set_and_check_facts_from_environment_required_vars:     []
 set_and_check_facts_from_environment_non_required_vars: []
 
 ...
