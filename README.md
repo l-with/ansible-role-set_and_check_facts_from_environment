@@ -14,3 +14,9 @@ If the environment variable is not set and not in `set_and_check_facts_from_envi
 ### `set_and_check_facts_from_environment_non_required_vars`: `[]`
 
 the list of variable not to check if set
+
+### `set_and_check_facts_from_environment_tf_vars`: `no`
+
+if environment variables `TF_VAR_*` should be used
+
+The ansible variables are name without prefix `TF_VAR_` and assumed to be name with exact case.
